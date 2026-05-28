@@ -32,6 +32,14 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@opencode-ai/plugin": "1.15.10"
+    "@opencode-ai/plugin": "1.15.10",
+    "simple-notify": "git+https://github.com/ShuKe365/simple-notify.git#main"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
   }
 }
