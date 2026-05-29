@@ -1,29 +1,31 @@
 {
   "name": "simple-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "opencode plugin for macOS session notifications",
-  "main": "./dist/index.js",
   "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "src",
     "dist",
     "README.md",
     "AGENTS.md"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.js"
-    }
-  },
   "scripts": {
-    "build": "bun build src/index.ts --target=node --outfile=dist/index.js",
+    "clean": "rm -rf dist",
+    "build": "mkdir -p dist && bun build src/index.ts --target=node --outfile=dist/index.js",
     "prepare": "bun run build",
     "test": "bun test",
     "check": "bun run test && bun run build"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ShuKe365/simple-notify.git"
+    "url": "https://github.com/ShuKe365/simple-notify.git"
   },
   "keywords": [
     "opencode",
@@ -34,11 +36,8 @@
   "dependencies": {
     "@opencode-ai/plugin": "1.15.10"
   },
-  "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
+    "@types/bun": "latest",
     "typescript": "^5"
   }
 }

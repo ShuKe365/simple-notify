@@ -6,12 +6,9 @@
       "name": "simple-notify",
       "dependencies": {
         "@opencode-ai/plugin": "1.15.10",
-        "simple-notify": "git+https://github.com/ShuKe365/simple-notify.git#main",
       },
       "devDependencies": {
         "@types/bun": "latest",
-      },
-      "peerDependencies": {
         "typescript": "^5",
       },
     },
@@ -72,8 +69,6 @@
     "shebang-command": ["shebang-command@2.0.0", "", { "dependencies": { "shebang-regex": "^3.0.0" } }, "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA=="],
 
     "shebang-regex": ["shebang-regex@3.0.0", "", {}, "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="],
-
-    "simple-notify": ["simple-notify@github:ShuKe365/simple-notify#80e06c5", { "dependencies": { "@opencode-ai/plugin": "1.15.10" } }, "ShuKe365-simple-notify-80e06c5", "sha512-yXQXyTtyrfvzH39TlNgw2Bdhs4aezW5vEXfE15wb++PjoTwHfbSg6eXKXfdaEeMm5IIK2wkwtqhQ/ZDpDEzIgQ=="],
 
     "toml": ["toml@4.1.1", "", {}, "sha512-EBJnVBr3dTXdA89WVFoAIPUqkBjxPMwRqsfuo1r240tKFHXv3zgca4+NJib/h6TyvGF7vOawz0jGuryJCdNHrw=="],
 
